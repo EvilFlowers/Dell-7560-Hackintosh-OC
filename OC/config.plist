@@ -475,6 +475,8 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<true/>
+			<key>SyncTableIds</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -565,6 +567,8 @@
 			<false/>
 			<key>SyncRuntimePermissions</key>
 			<false/>
+			<key>ResizeAppleGpuBars</key>
+                        <integer>-1</integer>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -716,6 +720,24 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>IntelBluetoothFirmware.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -738,7 +760,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -1402,6 +1424,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
@@ -1433,7 +1457,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>chris1111\Natural</string>
+			<string>Default</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -1670,6 +1694,37 @@
 		<true/>
 		<key>CustomMemory</key>
 		<false/>
+		<key>DataHub</key>
+		<dict>
+			<key>ARTFrequency</key>
+			<integer>0</integer>
+			<key>BoardProduct</key>
+			<string>Mac-CAD6701F7CEA0921</string>
+			<key>BoardRevision</key>
+			<data>Gw==</data>
+			<key>DevicePathsSupported</key>
+			<integer>0</integer>
+			<key>FSBFrequency</key>
+			<integer>0</integer>
+			<key>InitialTSC</key>
+			<integer>0</integer>
+			<key>PlatformName</key>
+			<string></string>
+			<key>SmcBranch</key>
+			<data>MjAxN21icAA=</data>
+			<key>SmcPlatform</key>
+			<data>ajc5YQAAAAA=</data>
+			<key>SmcRevision</key>
+			<data>AkQPAAAF</data>
+			<key>StartupPowerEvents</key>
+			<integer>0</integer>
+			<key>SystemProductName</key>
+			<string>MacBookPro14,2</string>
+			<key>SystemSerialNumber</key>
+			<string>C02TK0DWHV2N</string>
+			<key>SystemUUID</key>
+			<string>A8D58AAE-A861-4498-84E5-499B8DE1D267</string>
+		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseFeatures</key>
@@ -1677,7 +1732,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02745609GUHRPCA8</string>
+			<string>C02715101GUHRPC1H</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1689,9 +1744,83 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro14,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02VNTZYHV2N</string>
+			<string>C02TK0DWHV2N</string>
 			<key>SystemUUID</key>
-			<string>3AF10591-5C76-46DF-A7A4-658B4D999442</string>
+			<string>A8D58AAE-A861-4498-84E5-499B8DE1D267</string>
+		</dict>
+		<key>PlatformNVRAM</key>
+		<dict>
+			<key>BID</key>
+			<string>Mac-CAD6701F7CEA0921</string>
+			<key>FirmwareFeatures</key>
+			<data>fvUP/wAAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f/8f/wAAAAA=</data>
+			<key>MLB</key>
+			<string>C02715101GUHRPC1H</string>
+			<key>ROM</key>
+			<data>3k9nmZRC</data>
+			<key>SystemSerialNumber</key>
+			<string></string>
+			<key>SystemUUID</key>
+			<string>A8D58AAE-A861-4498-84E5-499B8DE1D267</string>
+		</dict>
+		<key>SMBIOS</key>
+		<dict>
+			<key>BIOSReleaseDate</key>
+			<string>06/13/2021</string>
+			<key>BIOSVendor</key>
+			<string></string>
+			<key>BIOSVersion</key>
+			<string>429.140.8.0.0</string>
+			<key>BoardAssetTag</key>
+			<string>Base Board Asset Tag</string>
+			<key>BoardLocationInChassis</key>
+			<string>Part Component</string>
+			<key>BoardManufacturer</key>
+			<string></string>
+			<key>BoardProduct</key>
+			<string>Mac-CAD6701F7CEA0921</string>
+			<key>BoardSerialNumber</key>
+			<string>C02715101GUHRPC1H</string>
+			<key>BoardType</key>
+			<integer>10</integer>
+			<key>BoardVersion</key>
+			<string>MacBookPro14,2</string>
+			<key>ChassisAssetTag</key>
+			<string>Asset Tag#</string>
+			<key>ChassisManufacturer</key>
+			<string></string>
+			<key>ChassisSerialNumber</key>
+			<string>C02TK0DWHV2N</string>
+			<key>ChassisType</key>
+			<integer>9</integer>
+			<key>ChassisVersion</key>
+			<string>Mac-CAD6701F7CEA0921</string>
+			<key>FirmwareFeatures</key>
+			<data>fvUP/wAAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f/8f/wAAAAA=</data>
+			<key>PlatformFeature</key>
+			<integer>26</integer>
+			<key>ProcessorType</key>
+			<integer>1541</integer>
+			<key>SmcVersion</key>
+			<data></data>
+			<key>SystemFamily</key>
+			<string>MacBook Pro</string>
+			<key>SystemManufacturer</key>
+			<string></string>
+			<key>SystemProductName</key>
+			<string>MacBookPro14,2</string>
+			<key>SystemSKUNumber</key>
+			<string>System SKU#</string>
+			<key>SystemSerialNumber</key>
+			<string>C02TK0DWHV2N</string>
+			<key>SystemUUID</key>
+			<string>A8D58AAE-A861-4498-84E5-499B8DE1D267</string>
+			<key>SystemVersion</key>
+			<string>1.0</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1700,7 +1829,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Custom</string>
+		<string>TryOverwrite</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
@@ -1727,6 +1856,8 @@
 			<string>Builtin</string>
 			<key>CustomDelays</key>
 			<false/>
+			<key>GraphicsInputMirroring</key>
+			<true/>
 			<key>KeyInitialDelay</key>
 			<integer>50</integer>
 			<key>KeySubsequentDelay</key>
@@ -1761,20 +1892,146 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>OpenHfsPlus.efi</string>
-			<string>OpenRuntime.efi</string>
-			<string>OpenCanopy.efi</string>
-			<string>#AudioDxe.efi</string>
-			<string>#OpenPartitionDxe.efi</string>
-			<string>#OpenUsbKbDxe.efi</string>
-			<string>#UsbMouseDxe.efi</string>
-			<string>#Ps2KeyboardDxe.efi</string>
-			<string>#Ps2MouseDxe.efi</string>
-			<string>#HiiDatabase.efi</string>
-			<string>#NvmExpressDxe.efi</string>
-			<string>#XhciDxe.efi</string>
-			<string>#ExFatDxe.efi</string>
-			<string>#CrScreenshotDxe.efi</string>
+			<dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>Path</key>
+                                <string>OpenHfsPlus.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>Path</key>
+                                <string>OpenRuntime.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <true/>
+                                <key>Path</key>
+                                <string>OpenCanopy.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>AudioDxe.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>OpenPartitionDxe.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>OpenUsbKbDxe.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>UsbMouseDxe.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>Ps2KeyboardDxe.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>Ps2MouseDxe.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>HiiDatabase.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>NvmExpressDxe.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>XhciDxe.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>ExFatDxe.efi</string>
+                        </dict>
+                        <dict>
+                                <key>Arguments</key>
+                                <string></string>
+                                <key>Comment</key>
+                                <string></string>
+                                <key>Enabled</key>
+                                <false/>
+                                <key>Path</key>
+                                <string>CrScreenshotDxe.efi</string>
+                        </dict>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1887,6 +2144,10 @@
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
 			<false/>
+			<key>ForceOcWriteFlash</key>
+                        <false/>
+			<key>ResizeGpuBars</key>
+                        <integer>-1</integer>
 		</dict>
 		<key>ReservedMemory</key>
 		<array>
